@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mlflow-service"
+version = "0.1.0"
+description = "MLFlow Supported"
+requires-python = ">=3.10"
+dependencies = [
+    "psycopg2-binary",
+    "boto3",
+]

@@ -1,7 +1,23 @@
 [project]
-name = "hate-speech-detection"
+name = "hate-speech-detection-workspace"
 version = "0.1.0"
-description = "Add your description here"
+description = "Monorepo workspace for Vietnamese Hate Speech Detection MLOps"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = []
+
+[tool.uv]
+workspace = { members = ["shared", "services/*"] }
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "data-pipeline",
+    "training",
+    "shared-utils",
+]
+
+[tool.uv.sources]
+data-pipeline = { workspace = true }
+training = { workspace = true }
+shared-utils = { workspace = true }

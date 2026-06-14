@@ -8,3 +8,16 @@ wheels/
 
 # Virtual environments
 .venv
+
+
+# Implementation Plans
+implementation_plans/
+
+# Walkthrough
+walkthrough/
+
+# Data
+data/
+
+# Notebooks
+notebooks/
